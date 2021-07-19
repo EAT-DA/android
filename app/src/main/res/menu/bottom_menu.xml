@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_eatfolio"
+        android:enabled="true"
+        android:icon="@drawable/ic_eatfolio"
+        android:title="잇트폴리오"/>
+    <item
+        android:id="@+id/action_matching"
+        android:enabled="true"
+        android:icon="@drawable/ic_matching"
+        android:title="사람을 잇다"/>
+    <item
+        android:id="@+id/action_chatting"
+        android:enabled="true"
+        android:icon="@drawable/ic_chatting"
+        android:title="채팅"/>
+    <item
+        android:id="@+id/action_restaurant"
+        android:enabled="true"
+        android:icon="@drawable/ic_restaurant"
+        android:title="식당을 잇다"/>
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="설정"/>
+</menu>
