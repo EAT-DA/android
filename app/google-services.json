@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "364870460792",
+    "project_id": "eat-da",
+    "storage_bucket": "eat-da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364870460792:android:1c7c8c709c6570fdc2548d",
+        "android_client_info": {
+          "package_name": "com.example.eat_da"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364870460792-16ibuopulprkqf2co0karsqrvoij7gtm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eat_da",
+            "certificate_hash": "38528485dd26ed15c8b45d548d4575062f723715"
+          }
+        },
+        {
+          "client_id": "364870460792-oejuphq4ui3ht38q4vkqbvpt511hf76a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMe0u3uiJc_CbhwYsvaAcT2YmiPBLZ2pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364870460792-oejuphq4ui3ht38q4vkqbvpt511hf76a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

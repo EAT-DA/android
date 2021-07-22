@@ -6,14 +6,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
+
 public class frag_settings extends Fragment {
     private View view;
+
+    private TextView tv_nickName;
+    private ImageView iv_profile;
 
     private Button bt_security_settings;
     private ImageButton bt_security_more;
@@ -42,6 +49,12 @@ public class frag_settings extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.settings, container, false);
+
+        tv_nickName = view.findViewById(R.id.tv_nickName);
+        tv_nickName.setText(((MainActivity)getActivity()).nickName);
+        iv_profile = view.findViewById(R.id.iv_profile);
+        Glide.with(this).load(((MainActivity)getActivity()).photoUrl).into(iv_profile);
+
         bt_security_settings = view.findViewById(R.id.bt_security_settings);
         bt_security_more = view.findViewById(R.id.bt_security_more);
         layout_security_myinfo = view.findViewById(R.id.layout_security_myinfo);

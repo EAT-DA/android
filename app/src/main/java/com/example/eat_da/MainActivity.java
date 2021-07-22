@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -20,10 +21,18 @@ public class MainActivity extends AppCompatActivity {
     private frag_matching frag_matching;
     private frag_restaurant frag_restaurant;
     private frag_settings frag_settings;
+
+    public String nickName;
+    public String photoUrl;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        nickName = intent.getStringExtra("nickName");
+        photoUrl = intent.getStringExtra("photoUrl");
 
         frag_chatting = new frag_chatting();
         frag_eatfolio = new frag_eatfolio();
