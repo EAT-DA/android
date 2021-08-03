@@ -52,7 +52,7 @@ public class MainLoginActivity extends AppCompatActivity implements GoogleApiCli
         bt_register_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainLoginActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(MainLoginActivity.this, SignupActivity.class);
                 startActivity(intent);
             }
         });
