@@ -31,7 +31,7 @@
                     android:layout_width="39dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="divider_horizontal_dark"
+                    android:background="@android:drawable/divider_horizontal_dark"
                     app:srcCompat="@drawable/ic_back" />
 
                 <TextView
@@ -89,7 +89,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="0.8"
-                                android:background="divider_horizontal_dark"
+                                android:background="@android:drawable/divider_horizontal_dark"
                                 android:text="프로필 변경" />
 
                         </LinearLayout>
@@ -163,7 +163,7 @@
                                 android:layout_width="118dp"
                                 android:layout_height="28dp"
                                 android:layout_weight="1"
-                                android:background="divider_horizontal_dark"
+                                android:background="@drawable/background_custom2"
                                 android:text="빠름" />
 
                             <Button
@@ -171,7 +171,7 @@
                                 android:layout_width="119dp"
                                 android:layout_height="30dp"
                                 android:layout_weight="1"
-                                android:background="divider_horizontal_dark"
+                                android:background="@drawable/background_custom2"
                                 android:text="보통" />
 
                             <Button
@@ -179,7 +179,7 @@
                                 android:layout_width="105dp"
                                 android:layout_height="31dp"
                                 android:layout_weight="1"
-                                android:background="divider_horizontal_dark"
+                                android:background="@drawable/background_custom2"
                                 android:text="느림" />
                         </LinearLayout>
 
