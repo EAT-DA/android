@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
 
     private Button bt_signup_login;
-
+    private Button bt_login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,16 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        bt_login = findViewById(R.id.bt_login);
+
+        bt_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

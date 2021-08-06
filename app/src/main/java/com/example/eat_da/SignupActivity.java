@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 public class SignupActivity extends AppCompatActivity {
 
     private ImageButton bt_back_signup;
+    private Button bt_signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +27,15 @@ public class SignupActivity extends AppCompatActivity {
                 finish();
             }
         });
+        bt_signup = findViewById(R.id.bt_signup);
+        bt_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }
