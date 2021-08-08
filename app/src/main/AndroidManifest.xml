@@ -11,16 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EATDA">
-        <activity android:name=".MainLoginActivity">
+        <activity android:name=".LoginActivity">
             <!-- 앱 빌드 시 첫 실행 액티비티 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SignupActivity" />
         <activity android:name=".MainActivity"></activity>
     </application>
 
