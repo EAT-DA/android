@@ -4,16 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AC8FC6"
+    android:background="#FFD557"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".LoginActivity">
-
-    <View
-        android:id="@+id/view8"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#000000" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,11 +16,37 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_back_signup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="회원가입"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="30dp">
+            android:layout_marginTop="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,120 +54,154 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="330dp"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="아이디"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="330dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <ImageButton
-                        android:id="@+id/bt_back_signup"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/ic_back" />
+                    <EditText
+                        android:id="@+id/et_id_signup"
+                        android:layout_width="235dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal|left"
+                        android:background="@drawable/edittext_custom"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="290dp"
-                        android:layout_height="wrap_content"
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
-                        android:text="회원가입"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"
+                        android:background="@drawable/button_custom2"
+                        android:text="중복확인"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold" />
-
                 </LinearLayout>
 
-                <EditText
-                    android:id="@+id/et_id_signup"
+                <TextView
+                    android:id="@+id/textView9"
                     android:layout_width="330dp"
-                    android:layout_height="48dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/edittext_custom"
-                    android:ems="10"
-                    android:hint="아이디"
-                    android:inputType="textPersonName"
-                    android:paddingLeft="20dp"
-                    android:textSize="16sp" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="비밀번호"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/et_password_signup"
                     android:layout_width="330dp"
-                    android:layout_height="48dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_custom"
                     android:ems="10"
-                    android:hint="비밀번호"
                     android:inputType="textPassword"
                     android:paddingLeft="20dp"
                     android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="비밀번호 확인"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/et_passwordCheck_signup"
                     android:layout_width="330dp"
-                    android:layout_height="48dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_custom"
                     android:ems="10"
-                    android:hint="비밀번호 확인"
                     android:inputType="textPassword"
                     android:paddingLeft="20dp"
                     android:textSize="16sp" />
 
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="이름"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
                 <EditText
                     android:id="@+id/et_name_signup"
                     android:layout_width="330dp"
-                    android:layout_height="48dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_custom"
                     android:ems="10"
-                    android:hint="이름"
                     android:inputType="textPersonName"
                     android:paddingLeft="20dp"
                     android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/et_nickname_signup"
+                <TextView
+                    android:id="@+id/textView17"
                     android:layout_width="330dp"
-                    android:layout_height="48dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/edittext_custom"
-                    android:ems="10"
-                    android:hint="닉네임"
-                    android:inputType="textPersonName"
-                    android:paddingLeft="20dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_birthdate_signup"
-                    android:layout_width="330dp"
-                    android:layout_height="48dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/edittext_custom"
-                    android:ems="10"
-                    android:hint="생년월일"
-                    android:inputType="date"
-                    android:paddingLeft="20dp"
-                    android:textSize="16sp" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="휴대전화번호"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/et_phone_signup"
                     android:layout_width="330dp"
-                    android:layout_height="48dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/edittext_custom"
                     android:ems="10"
-                    android:hint="휴대전화번호"
+                    android:hint="'-' 구분없이 입력"
                     android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="생년월일"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_birthdate_signup"
+                    android:layout_width="330dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_custom"
+                    android:ems="10"
+                    android:hint="8자리 입력"
+                    android:inputType="date"
                     android:paddingLeft="20dp"
                     android:textSize="16sp" />
 
@@ -158,7 +212,7 @@
                     android:layout_gravity="left"
                     android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
@@ -167,13 +221,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_weight="1"
                         android:text="성별"
-                        android:textSize="16sp" />
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
 
                     <RadioGroup
                         android:id="@+id/rg_gender_signup"
-                        android:layout_width="100dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_gravity="left"
                         android:layout_marginStart="10dp"
@@ -183,82 +240,75 @@
 
                         <RadioButton
                             android:id="@+id/bt_male"
-                            android:layout_width="40dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/rb_background_custom"
-                            android:button="@android:color/transparent"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
                             android:elevation="4dp"
                             android:gravity="center"
-                            android:text="남"
-                            android:textColor="@drawable/rb_text_custom" />
+                            android:text="남성"
+                            android:theme="@style/ButtonStyle" />
 
                         <RadioButton
                             android:id="@+id/bt_female"
-                            android:layout_width="40dp"
+                            android:layout_width="60dp"
                             android:layout_height="30dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/rb_background_custom"
-                            android:button="@android:color/transparent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
                             android:elevation="4dp"
                             android:gravity="center"
-                            android:text="여"
-                            android:textColor="@drawable/rb_text_custom" />
+                            android:text="여성"
+                            android:theme="@style/ButtonStyle" />
                     </RadioGroup>
                 </LinearLayout>
 
                 <CheckBox
                     android:id="@+id/checkBox4"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginStart="45dp"
-                    android:layout_marginLeft="45dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/checkbox_custom"
-                    android:button="@android:color/transparent" />
+                    android:layout_width="330dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="서비스 이용약관 전체 동의"
+                    android:textSize="15sp"
+                    android:theme="@style/ButtonStyle" />
 
                 <View
                     android:id="@+id/view9"
                     android:layout_width="330dp"
                     android:layout_height="1dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:background="#989898" />
 
                 <CheckBox
-                    android:id="@+id/checkBox5"
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginStart="45dp"
-                    android:layout_marginLeft="45dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/checkbox_custom"
-                    android:button="@android:color/transparent" />
+                    android:id="@+id/checkBox6"
+                    android:layout_width="330dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="[필수] 이용약관 및 개인정보처리방침"
+                    android:textSize="15sp"
+                    android:theme="@style/ButtonStyle" />
 
                 <CheckBox
-                    android:id="@+id/checkBox6"
-                    android:layout_width="20dp"
+                    android:id="@+id/checkBox7"
+                    android:layout_width="330dp"
                     android:layout_height="20dp"
-                    android:layout_gravity="left"
-                    android:layout_marginStart="45dp"
-                    android:layout_marginLeft="45dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/checkbox_custom"
-                    android:button="@android:color/transparent" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="7dp"
+                    android:text="[선택] 마케팅 정보 수집 및 수신 동의"
+                    android:textSize="15sp"
+                    android:theme="@style/ButtonStyle" />
 
                 <Button
                     android:id="@+id/bt_signup"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/button_custom"
                     android:text="회원가입"
                     android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:elevation="4dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </ScrollView>

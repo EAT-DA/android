@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AC8FC6"
+    android:background="#FFD557"
     android:gravity="bottom|center_horizontal"
     android:orientation="vertical"
     tools:context=".LoginActivity">
@@ -20,7 +20,7 @@
             android:id="@+id/textView6"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="45dp"
             android:text="로그인"
             android:textColor="@color/black"
             android:textSize="22sp"
@@ -48,39 +48,22 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/edittext_custom"
             android:drawableRight="@drawable/ic_lock"
+            android:ems="10"
             android:hint="비밀번호"
+            android:inputType="textPassword"
             android:paddingLeft="20dp"
             android:paddingRight="15dp"
-            android:textSize="16sp"
-            android:ems="10"
-            android:inputType="textPassword" />
+            android:textSize="16sp" />
 
-        <LinearLayout
+        <CheckBox
+            android:id="@+id/checkBox8"
             android:layout_width="330dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="15dp"
-            android:gravity="left|center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="10dp">
-
-            <CheckBox
-                android:id="@+id/checkBox8"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center_horizontal|left|center_vertical"
-                android:background="@drawable/checkbox_custom"
-                android:button="@android:color/transparent" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/fui_transparent"
-                android:gravity="left|center_vertical"
-                android:paddingLeft="10dp"
-                android:text="로그인 상태 유지"
-                android:textSize="14sp" />
-        </LinearLayout>
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="로그인 상태 유지"
+            android:textSize="15sp"
+            android:theme="@style/ButtonStyle" />
 
         <Button
             android:id="@+id/bt_login"
@@ -93,8 +76,7 @@
             android:text="로그인"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:elevation="4dp"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -118,7 +100,7 @@
             <View
                 android:id="@+id/view7"
                 android:layout_width="2dp"
-                android:layout_height="20dp"
+                android:layout_height="15dp"
                 android:layout_weight="1"
                 android:background="#C8C8C8" />
 
@@ -138,7 +120,7 @@
             <View
                 android:id="@+id/view10"
                 android:layout_width="2dp"
-                android:layout_height="20dp"
+                android:layout_height="15dp"
                 android:layout_weight="1"
                 android:background="#C8C8C8" />
 

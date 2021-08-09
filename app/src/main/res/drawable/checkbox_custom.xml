@@ -13,7 +13,7 @@
             <item>
                 <shape>
                     <corners android:radius="2dp"/>
-                    <solid android:color="#AC8FC6"/>
+                    <solid android:color="#FFD557"/>
                 </shape>
             </item>
             <item android:drawable="@drawable/ic_check"
