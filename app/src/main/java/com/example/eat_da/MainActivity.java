@@ -8,6 +8,9 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -22,30 +25,27 @@ public class MainActivity extends AppCompatActivity {
     private frag_restaurant frag_restaurant;
     private frag_settings frag_settings;
 
-    public String nickName;
-    public String photoUrl;
+    private frag_restaurant_details frag_restaurant_details;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = getIntent();
-        nickName = intent.getStringExtra("nickName");
-        photoUrl = intent.getStringExtra("photoUrl");
-
         frag_chatting = new frag_chatting();
         frag_eatfolio = new frag_eatfolio();
         frag_matching = new frag_matching();
         frag_restaurant = new frag_restaurant();
         frag_settings = new frag_settings();
+        frag_restaurant_details = new frag_restaurant_details();
+
         setFrag(0);         //첫 프래그먼트 화면 지정
 
         bottomNavigationView = findViewById(R.id.bottomNavi);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch(item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.action_eatfolio:
                         setFrag(0);
                         break;
@@ -65,10 +65,11 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-    }
 
+
+    }
     //프래그먼트 교체가 일어나는 실행문
-    private void setFrag(int n){
+    public void setFrag(int n){
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
         switch(n){
@@ -90,6 +91,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 4:
                 ft.replace(R.id.main_frame, frag_settings);
+                ft.commit();
+                break;
+            case 5:
+                ft.replace(R.id.main_frame, frag_restaurant_details);
                 ft.commit();
                 break;
         }

@@ -50,10 +50,6 @@ public class frag_settings extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.settings, container, false);
 
-        tv_nickName = view.findViewById(R.id.tv_nickName);
-        tv_nickName.setText(((MainActivity)getActivity()).nickName);
-        iv_profile = view.findViewById(R.id.iv_profile);
-        Glide.with(this).load(((MainActivity)getActivity()).photoUrl).into(iv_profile);
 
         bt_security_settings = view.findViewById(R.id.bt_security_settings);
         bt_security_more = view.findViewById(R.id.bt_security_more);
