@@ -15,7 +15,7 @@ public class frag_matching extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.matching, container, false);
+        view = inflater.inflate(R.layout.matching_writing, container, false);
         return view;
     }
 }
